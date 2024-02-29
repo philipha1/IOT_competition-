@@ -1,7 +1,3 @@
-# 엑셀 파일 데이터 수식화
-# 강수량 0~25, 26~50, 51~75, 76~100 / 변동 상수 페이퍼 참고
-# 강수량으로 인한 변동성 변수: Occupancy(0~1)/ {여유로움, 다소 혼잡함, 혼잡함}
-### 시간대로 인한 차량 점유율 관계
 
 import pandas as pd
 from datetime import datetime 
@@ -19,7 +15,7 @@ st = nw - zero
 time1 = st + timedelta(seconds=9*3600) # 9시
 time2 = st + timedelta(seconds=18*3600) #18시
 
-# 변수 선언
+
 PSR_cof = 0.073
 Temp_cof = -0.00728
 Temp_avg = 22
